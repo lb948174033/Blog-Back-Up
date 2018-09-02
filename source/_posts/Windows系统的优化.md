@@ -37,7 +37,7 @@ date: 2018-01-28 16:37:35
 
 * <font size=3>如果你已经装好系统，那么你所需要的肯定已经不再是精简镜像了，而是需要精简掉那些你不需要的软件的方法，我这里不会去具体强调哪些Windows软件卸载，对于强迫症来说无疑全部卸载才是王道，因为这始终是一个使用习惯问题，所以授之于鱼不如授之于渔，精简哪些还是让大家自己决定吧。
 管理员权限打开`windows powershell`</font>
-``` html
+```dos
 //卸载命令
 Get-AppxPackage *ZuneMusic* | Remove-AppxPackage
 
@@ -54,7 +54,7 @@ get-appxpackage -alluser | findstr "PackageFullName"
 ### 1.禁用多余服务
 * <font size=3>电脑计算机之所以有的时候越用越卡就是因为那些多余服务占用了你电脑的使用，这些服务有些是微软自带的，有些是安装第三方软件产生的，软件千千万，是不可能讲的完的，所以这里就以微软自带的服务举例子。</font>
 * <font size=3>打开`控制面板–管理工具–服务`</font>
-``` html
+``` dos
 //微软搜索
 Windows Search 禁用
 
