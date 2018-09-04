@@ -108,7 +108,7 @@ douban:
     title: 'This is my book title'
     quote: 'This is my book quote'
   movie:
-    title: '我的动漫'
+    title: '关于我'
     quote: '那些曾经看过以为念念不忘的动漫就在我们念念不忘的过程里，被我们遗忘了。--记看过的动漫'
   game:
     title: 'This is my game title'

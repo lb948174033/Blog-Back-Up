@@ -168,7 +168,7 @@
 	top: 65%;
 	width: 11px;
 	height: 11px;
-	background: url(red.png) 0px 0px no-repeat;
+	background: url(images/red.png) 0px 0px no-repeat;
 }
 .track-list li .node-icon2 {
 	position: absolute;
@@ -176,7 +176,7 @@
 	top: 65%;
 	width: 11px;
 	height: 11px;
-	background: url(grigio.png) 0px 0px no-repeat;
+	background: url(images/grigio.png) 0px 0px no-repeat;
 }
 .track-list li.first .node-icon {
 	background-position: 0 -72px;
@@ -201,8 +201,57 @@
 .track-list li.first .txt {
 	max-width: 600px;
 }
+#wdzph {
+	margin-bottom: 0;
+}
+.production-item {
+    padding-bottom: 10px;
+    position: relative;
+    clear: both;
+    min-height: 170px;
+    padding: 10px 0;
+    border-bottom: 1px #ddd solid;
+    display: block;
+}
+.production-item-nobottom {
+    padding-bottom: 10px;
+    position: relative;
+    clear: both;
+    min-height: 170px;
+    padding: 10px 0;
+    display: block;
+}
+.production-picture img {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 110px;
+    display: block;
+    margin-top: 24px;
+}
+.production-info {
+    padding-left: 120px;
+    display: block;
+}
+.production-comments {
+    font-size: 15px;
+    display: block;
+	color:#999;
+}
+.production-title a {
+	font-size:18px;
+	color:#4d4d4d;
+	text-align:left;
+    display: block;
+    font-weight: 550;
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width:600px) {
+    .production-item {
+        width: 100%;
+    }
 	.instagram .thumb {
 		width: 50%;
 		padding-bottom: 50%;

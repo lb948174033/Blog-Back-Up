@@ -26,6 +26,23 @@ abbrlink: 19487
 <h3>本站介绍</h3>
 <div class="track-rcol" id="shijianzhou">
 	<div class="track-list" id="shijian">
+			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+		<script>
+		    var now = new Date(); 
+		    function createtime() { 
+		        var grt= new Date("11/29/2017 15:06:52");//此处修改你的建站时间或者网站上线时间 
+		        now.setTime(now.getTime()+250); 
+		        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+		        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+		        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+		        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+		        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+		        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+		        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+		        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+		    } 
+		setInterval("createtime()",250);
+		</script>
 		<ul>
 			<li>
 				<i class="node-icon2"></i>
@@ -38,14 +55,36 @@ abbrlink: 19487
 				<span class="txt">将站点从：<a href="https://github.com/lb948174033/lb948174033.github.io" target="_blank">Github</a>托管至：<a href="https://coding.net/" target="_blank">Coding</a>，同时将域名解析分为海外与境内两种方式，国内ip走：<a href="https://coding.net/" target="_blank">Coding</a>，国外走：<a href="https://github.com/lb948174033/lb948174033.github.io" target="_blank">Github</a>。</span>
 			</li>
 			<li>
+				<i class="node-icon2"></i>
+				<span class="time">2018年08月份</span>
+				<span class="txt">将站点同步至自己的个人服务器，并更换域名为：<a href="http://gzx97.com" target="_blank">wwww.gzx97.com</a>,同时停止对：<a href="https://github.com/lb948174033/lb948174033.github.io" target="_blank">Github</a>和<a href="https://coding.net/" target="_blank">Coding</a>上站点的维护。</span>
+			</li>
+			<li>
 				<i class="node-icon"></i>
 				<span class="time">2018年09月份</span>
-				<span class="txt">将站点同步至自己的个人服务器，并更换域名为：<a href="http://gzx97.com" target="_blank">wwww.gzx97.com</a>,同时停止对：<a href="https://github.com/lb948174033/lb948174033.github.io" target="_blank">Github</a>和<a href="https://coding.net/" target="_blank">Coding</a>上站点的维护。</span>
+				<span class="txt">将站点进行实名制认证并对网站<a href="https://baike.baidu.com/item/ICP%E5%A4%87%E6%A1%88/1220667?fr=aladdin" target="_blank">ICP备案</a>。</span>
 			</li>
 		</ul>
 	</div>
 </div>
 <p>因为个人喜好：简单、清新，所以本站围绕的风格也将是这两个方向，建站的初衷在于记录自己的学习历程与一些生活当中的感想，相册与壁纸类里面的图片皆来自于互联网。</p>
 
-<h3>我的作品</h3>
-<p id="nianq">待补充...</p>
+<h3 id="wdzph">我的作品</h3>
+<div class="production-item">
+    <div class="production-picture"><img src="images/IMG_1544.PNG" referrerPolicy="no-referrer" /></div>
+    <div class="production-info">
+        <div class="production-title">
+            <a target="_blank" href="/">公子笑的主站</a>
+        </div>
+        <div class="production-comments">记录自己的学习历程与一些生活当中的感想的个人站。</div>
+    </div>
+</div>
+<div class="production-item-nobottom">
+    <div class="production-picture"><img src="images/jdong.jpg" referrerPolicy="no-referrer" /></div>
+    <div class="production-info">
+        <div class="production-title">
+            <a target="_blank" href="http://212.64.26.205/production/jd/index.html">仿京东JD.COM官网主页面</a>
+        </div>
+        <div class="production-comments">用HTML+CSS写的一个模仿京东商城的网页。</div>
+    </div>
+</div>
