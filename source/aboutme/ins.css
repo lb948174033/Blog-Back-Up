@@ -228,13 +228,14 @@
     width: 110px;
     display: block;
     margin-top: 24px;
+    border-radius: 10px;
 }
 .production-info {
     padding-left: 120px;
     display: block;
 }
 .production-comments {
-    font-size: 15px;
+    font-size: 13px;
     display: block;
 	color:#999;
 }
@@ -244,7 +245,7 @@
 	text-align:left;
     display: block;
     font-weight: 550;
-    margin-top: 40px;
+    margin-top: 22px;
 }
 
 
