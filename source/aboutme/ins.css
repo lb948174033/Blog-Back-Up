@@ -228,6 +228,7 @@
     width: 110px;
     display: block;
     margin-top: 24px;
+    border: 1px #ccc solid;
     border-radius: 10px;
 }
 .production-info {
