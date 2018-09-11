@@ -119,13 +119,14 @@
 
 	        .bd {
 	            font-size: 33px;
-	            display: inline;
-	            margin-top: 8%;
+	            /*display: inline;*/
+	            /*margin-top: 8%;*/
 	        }
 	        .container img {
 	        	width: 35%;
 	        	margin-left: 30%;
 	        	margin-top: 17%;
+	        	display: block;
         	}
 	        .btn-group button {
 	        	width: 150px;
@@ -164,6 +165,9 @@ CanvasStar.init();
         <div id="p1">
             <h1>小姐姐，我观察你好久了</h1>
             <div class="bd">
+    			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            </div>
+            <div class="bd">
                 做我女朋友好不好？ 
             </div>
             <img src="biaobai.gif" />
@@ -179,5 +183,21 @@ CanvasStar.init();
         </div>
     </div>
     <script type="text/javascript" src="yiqi.js"></script>
+		<script>
+		    var now = new Date(); 
+		    function createtime() { 
+		        var grt= new Date("11/25/2011 15:06:52");//此处修改你的建站时间或者网站上线时间 
+		        now.setTime(now.getTime()+250); 
+		        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+		        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+		        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+		        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+		        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+		        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+		        document.getElementById("timeDate").innerHTML = "我已喜欢你： "+dnum+" 天 "; 
+		        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+		    } 
+		setInterval("createtime()",250);
+		</script>
 </body>
 </html>

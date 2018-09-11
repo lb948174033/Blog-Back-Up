@@ -26,7 +26,7 @@ date: 2017-11-29 15:06:52
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31209775&auto=1&height=66"></iframe>
 
 ***
-* <font size=3>博客的搭建要感谢好友[Enterz](https://enterz.top/)的帮助!</font>
+* <font size=3>博客的搭建要感谢好友[Enterz](http://enterz.cn/)的帮助!</font>
 
 * <font size=3>目前就搭建成这个样吧，其实还有很多心里的构思碍于技术没有完成，但当下也不会在浪费时间在这个上面了，等自己的知识面更广阔后再来慢慢的完善与添加吧！</font>
 

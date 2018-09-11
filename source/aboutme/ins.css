@@ -221,15 +221,32 @@
     padding: 10px 0;
     display: block;
 }
-.production-picture img {
+.production-picture a {
     position: absolute;
     left: 0;
     top: 10px;
     width: 110px;
+    height: 110px;
     display: block;
     margin-top: 24px;
     border: 1px #ccc solid;
     border-radius: 10px;
+}
+.production-picture #bj1 {
+    background: url(images/gzx.jpg) no-repeat center;
+    background-size:cover;
+}
+.production-picture .bj2 {
+    background: url(images/jd.jpg) no-repeat center;
+    background-size:cover;
+}
+.production-picture .bj3 {
+    background: url(images/biaobai.jpg) no-repeat center;
+    background-size:cover;
+}
+.production-picture .bj4 {
+    background: url(images/qingjia.jpg) no-repeat center;
+    background-size:cover;
 }
 .production-info {
     padding-left: 120px;
