@@ -9,7 +9,7 @@ toc: true
 abbrlink: 51893
 date: 2018-09-02 21:21:29
 ---
-![zhuyetu](http://wx4.sinaimg.cn/mw690/0068Se8Tgy1furl0jdw8hj31hc0u0tcy.jpg)
+![zhuyetu](https://wx4.sinaimg.cn/mw690/0068Se8Tgy1furl0jdw8hj31hc0u0tcy.jpg)
 ## 前言
 * <font size=3>在开始文章之前，我先感慨一句：“一入前端深似海,从此再无安宁日。”，好像总是有填不完的坑和看了总想改的界面...</font>
 
@@ -119,9 +119,9 @@ vi nginx.conf
 同时将 user 改为 root 如下图，不然nginx无法访问 /home/git/project/blog
 nginx -s reload
 ```
-![root](http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fuvl04kz8oj30l30eq75s.jpg)
+![root](https://wx3.sinaimg.cn/mw690/0068Se8Tgy1fuvl04kz8oj30l30eq75s.jpg)
 
-![user](http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fuvl00yxuqj30qx0gtac6.jpg)
+![user](https://wx2.sinaimg.cn/mw690/0068Se8Tgy1fuvl00yxuqj30qx0gtac6.jpg)
 
 ## 三.本地配置
 * <font size=3>配置Hexo根目录的`_config.yml`文件，搜索`deploy`，将其并修改为：</font>
@@ -131,13 +131,13 @@ deploy:
   repo: git@yourip:/home/git/repos/blog.git
   branch: master
 ```
-![deploy](http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fuvjzn0cprj30ip04qmxm.jpg)
+![deploy](https://wx1.sinaimg.cn/mw690/0068Se8Tgy1fuvjzn0cprj30ip04qmxm.jpg)
 
 * <font size=3>`yourip`为你的服务器ip或者是你的域名，然后执行`hexo clean`、`hexo g`和`hexo d`查看效果。发布完成以后，也可以下一个`Xftp 6`软件，连接到你的服务器，到`/home/git/projects/blog`目录下查看你的hexo站点文件，`Xftp 6`是Gui图形画界面</font>
-![Xftp](http://wx4.sinaimg.cn/mw690/0068Se8Tgy1fuvjxtm0ldj30id0cl3zh.jpg)
+![Xftp](https://wx4.sinaimg.cn/mw690/0068Se8Tgy1fuvjxtm0ldj30id0cl3zh.jpg)
 
 ## 参考
 * <font size=3>下面这第一篇文章写的真的很详细，只是有点杂乱，本文大部分代码均复制于第一篇</font>
 
 [带你跳过各种坑，一次性把 Hexo 博客部署到自己的服务器](https://blog.csdn.net/qq_35561857/article/details/81590953?tdsourcetag=s_pctim_aiomsg)
-[使用 Git Hook 自动部署 Hexo 到个人 VPS](http://www.swiftyper.com/2016/04/17/deploy-hexo-with-git-hook/)
+[使用 Git Hook 自动部署 Hexo 到个人 VPS](https://www.swiftyper.com/2016/04/17/deploy-hexo-with-git-hook/)
