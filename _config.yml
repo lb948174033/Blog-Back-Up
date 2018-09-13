@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://212.64.26.205/
+url: http://www.gzx97.com
 root: /
 permalink: posts/:abbrlink/
 permalink_defaults:
@@ -79,7 +79,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@212.64.26.205:/home/git/repos/blog.git
+  repo: git@www.gzx97.com:/home/git/repos/blog.git
   branch: master
 
 jsonContent:
