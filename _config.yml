@@ -78,9 +78,9 @@ theme: yilia
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@www.gzx97.com:/home/git/repos/blog.git
-  branch: master
+- type: git
+  repo: git@www.gzx97.com:/home/git/repos/blog.git,master
+- type: baidu_url_submitter
 
 jsonContent:
   meta: false
@@ -104,16 +104,16 @@ jsonContent:
 douban:
   user: 173149290
   builtin: true
-  book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
   movie:
     title: '关于我'
     quote: '那些曾经看过以为念念不忘的动漫就在我们念念不忘的过程里，被我们遗忘了。--记看过的动漫'
-  game:
-    title: 'This is my game title'
-    quote: 'This is my game quote'
   timeout: 30000 #optional
 
 encrypt: 
   password: 19970726
+
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: www.gzx97.com # 在百度站长平台中注册的域名
+  token: 54xgK26Pjfy5zQm8 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
