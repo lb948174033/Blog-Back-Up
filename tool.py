@@ -34,6 +34,8 @@ def list_img_file(directory):
         if fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif":
             new_list.append(filename)
     # print new_list
+    new_list.sort()
+    
     return new_list
 
 
